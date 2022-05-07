@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact form</title>
+</head>
+
+<body>
+	<section>
+		<h1 style="color: red">Formular za interakciju sa klijentima</h1>
+		<h3 style="color: rgb(53, 11, 240)">Kontaktirajte nas za dodatne informacije ili odaberite pakete usluga</h3>
+		<hr>
+		<form action="forma.php">
+			<h3>Izaberite opcije koje Vam nudimo</h3>
+			<input type="checkbox">Front en development <br>
+			<input type="checkbox">back end development <br>
+			<input type="checkbox">CMS (Wordpress. Drupal, Joomla) <br>
+			<input type="checkbox">Internet marketing <br>
+			<hr>
+			<h3>Koji paket usluga Vam treba</h3>
+			<input type="radio" name="usluge">Grafički dizajn i marketing <br>
+			<input type="radio" name="usluge">Web development i marketing <br>
+			<input type="radio" name="usluge">Samo marketing <br>
+			<hr>
+			<h3>Koliki je budžet sa kojim raspolažete</h3>
+			<select>
+				<option value="500">500 - 1000$</option>
+				<option value="1000">1000 - 3000$</option>
+				<option value="5000">3000 - 5000$</option>
+				<option value="10000">5000 - 10000$</option>
+			</select>
+			<h3>Pošaljite nam dodatne napomene o projektu</h3>
+			<textarea cols="70" rows="10" placeholder="Dodatne napomene u vezi projekta"></textarea>
+			<hr>
+			<h2 style="color: red">U našoj ponudi imamo video i audio produkciju</h2>
+			<hr>
+			<h3>Video koji povlačimo iz samog projekta</h3>
+			<video src="video/Guitarist.mp4" controls></video>
+			<h3>Video koji embedujemo sa interneta</h3>
+			<iframe width="100%" height="290" src="https://www.youtube.com/embed/6fOF6qnW2Aw"
+				title="YouTube video player" frameborder="0"
+				allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+			<hr>
+			<h3>Naši audio radovi</h3>
+			<audio src="audio/sinobusi - Čamac na Tisi.mp3" controls></audio>
+			<hr>
+			<h3>Za dalju komunikaciju unesite Vaše podatke</h3>
+			Ime <input type="text" placeholder="Unesite ime"> <br> <br>
+			Prezime <input type="text" placeholder="Unesite prezime"> <br> <br>
+			Email <input type="text" placeholder="Unesite email"><br> <br>
+			Telefon <input type="text" placeholder="Unesite telefon">
+			<input type="submit" value="Pošaljite poruku">
+			<button type="button">Ovo je običan button</button>
+		</form>
+	</section>
+</body>
+
+</html>
